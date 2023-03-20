@@ -19,6 +19,7 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE
+```python
 Program Developed By : Mukil kumar v
 
 Register number : 212222230087
@@ -49,9 +50,6 @@ data.isnull().sum()
 
 data.duplicated()
 
-#Using mode method to fill the data in columns as Object(String)
-
-#mode()[0] - Takes the most reccuring value and fills the empty cells
 
 data['show_name'] = data['show_name'].fillna(data['show_name'].mode()[0])
 
@@ -61,26 +59,54 @@ data['original_network'] = data['original_network'].fillna(data['original_networ
 
 sns.boxplot(x="rating",data=data)
 
-#Using mean method to fill the data
-
 data['rating'] = data['rating'].fillna(data['rating'].mean())
 
 data['current_overall_rank'] = data['current_overall_rank'].fillna(data['current_overall_rank'].mean())
 
 data['watchers'] = data['watchers'].fillna(data['watchers'].mean())
 
-#Checking the total no.of null values again
-
 data.isnull().sum()
 
-#Checking info of the dataset to check all the columns have entries
-
 data.info()
+```
 # OUPUT
-##Dataset:
+## Dataset:
+![img](./img/1.png)
 
+## Head:
+![img](./img/2.png)
 
+## Describe:
+![img](./img/3.png)
 
+## Pre-cleaning information:
+![img](./img/4.png)
 
+## TAIL:
+![img](./img/5.png)
+
+## SHAPE:
+![img](./img/6.png)
+
+## COLOUMN:
+![img](./img/7.png)
+
+## PRE-CLEANING SUM:
+![img](./img/8.png)
+
+## DUPLICATE:
+![img](./img/9.png)
+
+## SNS PLOT:
+![img](./img/10.png)
+
+## POST-CLEANING SUM:
+![img](./img/12.png)
+
+## POST CLEANING INFORMATION:
+![img](./img/11.png)
+
+# Result:
+The given data is read and data cleaning is performed and the cleaned data is saved to a file.
 
 
