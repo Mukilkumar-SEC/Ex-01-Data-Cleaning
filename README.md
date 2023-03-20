@@ -19,9 +19,9 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE
-Program Developed By : Mirudhula D
+Program Developed By : Mukil kumar v
 
-Register number : 212221230060
+Register number : 212222230087
 
 import pandas as pd
 
@@ -77,3 +77,10 @@ data.isnull().sum()
 
 data.info()
 # OUPUT
+##Dataset:
+
+
+
+
+
+
